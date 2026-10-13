@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card {
+  width: 16em;
+  height: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.553);
+  transition: box-shadow 0.4s ease;
+}
+.Card:hover {
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.839);
+}
+
+.Card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+}
+.Card:hover .Save-button {
+  top: 10px;
+  right: 10px;
+}
+.Card:hover .caption-button {
+  bottom: 15px;
+  left: 12px;
+}
+.Card:hover .download-button {
+  bottom: 15px;
+  right: 65px;
+}
+.Card:hover .sharing-button {
+  bottom: 15px;
+  right: 25px;
+}
+
+.Save-button {
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 70px;
+  height: 45px;
+  transition: top 1s ease;
+}
+.Save-button:hover {
+  background-color: rgb(169, 12, 12);
+}
+.caption-button {
+  position: absolute;
+  bottom: -80px;
+  left: 12px;
+  border: none;
+  border-radius: 24px;
+  width: 135px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  background-color: rgba(240, 248, 255, 0.841);
+}
+.caption-button .material-symbols-outlined {
+  font-size: 16px;
+}
+.caption-button:hover {
+  background-color: rgba(203, 205, 207, 0.841);
+}
+.download-button {
+  position: absolute;
+  bottom: -80px;
+  right: 65px;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(240, 248, 255, 0.72);
+}
+.download-button:hover {
+  background-color: rgba(203, 205, 207, 0.841);
+}
+
+.sharing-button {
+  position: absolute;
+  bottom: -80px;
+  right: 25px;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(240, 248, 255, 0.716);
+}
+.sharing-button:hover {
+  background-color: rgba(203, 205, 207, 0.841);
+}
+.sharing-button,
+.download-button,
+.caption-button {
+  transition: bottom 1s ease;
+}
